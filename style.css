@@ -1,0 +1,203 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{background-color: #797d75;}
+
+main{
+display: flex;
+flex-direction: column;
+height: 100vh;
+width: 100vw;
+justify-content: center;
+align-items: center;
+background-color: #797d75;
+text-transform: uppercase;
+
+}
+
+.urna{
+display: flex;
+height: 500px;
+width: 980px;
+background-color: #cdd4c7;
+border: 5px solid transparent;
+border-radius: 10px;
+box-shadow: 5px 5px 3px #2a2b28;
+}
+
+.visor{
+display: flex;
+justify-content: space-around;
+align-items: center;
+height: 380px;
+width: 520px;
+background-color: #a9ccc0;
+margin-top: 70px;
+margin-left: 13px;
+border: solid 2px #8e918c;
+
+}
+
+.displayDigito1{
+    
+margin: 13px;
+height: 160px;
+width: 100px;
+font-size: 100px;
+text-align: center;
+
+}
+.displayDigito2{
+    
+       
+    margin: 13px;
+    height: 160px;
+    width: 100px;
+    font-size: 100px;
+    text-align: center;
+}
+
+.teclado{
+display: flex;
+justify-content: center;
+align-items: center;
+row-gap: 1ch;
+background-color:black;
+height: 390px;
+width: 400px;
+margin-top: 70px;
+margin-left:22px;
+}
+
+.teclas{
+height: 50px;
+width: 80px;
+background-color: black;
+margin: 8px;
+font-size: 18px;
+color: white;
+margin-left: 22px;
+}
+
+.teclas:hover{
+height: 50px;
+width: 80px;
+background-color: black;
+margin: 8px;
+font-size: 18px;
+color: white;
+margin-left: 22px;
+box-shadow: 2px 2px 1px #4a4848;
+border: 1px solid #4a4848;
+cursor: pointer;
+}
+
+.tecla0{
+display: block;  
+height: 50px;
+width: 80px;
+background-color: black;
+margin: 8px;
+font-size: 18px;
+color: white; 
+margin-left: 137px;
+}
+
+.tecla0:hover{
+height: 50px;
+width: 80px;
+background-color: black;
+box-shadow: 2px 2px 1px #4a4848;
+border: 1px solid #4a4848;
+margin: 8px;
+font-size: 18px;
+color: white; 
+margin-left: 137px;
+cursor: pointer;
+}
+
+
+
+.teclaDecisao{
+
+height: 45px;
+width: 120px;
+margin: 5px;
+cursor: pointer;    
+}
+
+
+#btnterminar{
+position: relative;
+left: 28%;
+top:5%;
+padding: 5px;
+color: #FFFFFF;
+background-color: #444;
+font-family: sans-serif;
+cursor: pointer;
+}
+
+
+
+
+
+
+.maquinaTitulo{
+display: flex;
+justify-content: center;
+align-items: center;    
+height: 100px;
+width: 900px;
+background-color: #cdd4c7;
+margin-top: 20px;
+box-shadow: 5px 5px 3px #2a2b28;
+border: 3px solid transparent;
+border-radius: 3px;
+font-family: arial, sans-serif;
+font-size: 20px;
+}
+
+.displayTitulo{
+font-size: 35px;
+width:500px;
+height: 40px;
+background-color: #c7cf8a;
+
+}
+
+.botaoConfirma{
+height: 50px;
+width: 80px;
+background-color: #49d157;
+cursor: pointer;
+
+}
+
+.botaoCorrige{
+height: 50px;
+width: 80px;
+background-color: tomato;
+cursor: pointer;
+}
+
+#idcorrige{background-color: tomato;}
+
+#idconfirma{background-color: #49d157}
+
+.candidatos{
+font-size: 20px;    
+font-family: Arial, Helvetica, sans-serif;
+text-transform: uppercase;
+text-align: center;
+padding: 10px;
+position: relative;
+left: 16%;
+top: 10px;
+height: 65px;
+width: 530px;
+background-color: #FFFFFF;
+}

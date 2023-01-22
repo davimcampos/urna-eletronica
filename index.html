@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urna eletrônica</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="candidatos">
+<p id="josé">Candidato José: número 15</p>
+<p id="maria">Candidata Maria: número 25</p>
+    </div>
+    <main>
+        
+        
+        <button id="btnterminar" onclick="terminar()">TERMINAR SESSÃO ></button>
+        <div class="urna">
+           
+
+            <div class="visor">
+                <div>
+                    <form>
+                        <input type="text" maxlength="1" class="displayDigito1" value=>
+                        <input type="text" maxlength="1" class="displayDigito2" value=>
+                    </form>
+                </div>
+
+
+            </div>
+            
+            <div class="teclado">
+                <form action="">
+                    <input type="button" onclick="number(1)" class="teclas" value="1">
+                    <input type="button" onclick="number(2)" class="teclas" value="2">
+                    <input type="button" onclick="number(3)" class="teclas" value="3">
+                    <input type="button" onclick="number(4)" class="teclas" value="4">
+                    <input type="button" onclick="number(5)" class="teclas" value="5">
+                    <input type="button" onclick="number(6)" class="teclas" value="6">
+                    <input type="button" onclick="number(7)" class="teclas" value="7">
+                    <input type="button" onclick="number(8)" class="teclas" value="8">
+                    <input type="button" onclick="number(9)" class="teclas" value="9">
+                    <input type="button" onclick="number(0)" class="tecla0" value="0">
+                    <input type="button" onclick="brancobtn()" class="teclaDecisao" value="BRANCO">
+                    <input type="button" onclick="corrige()" class="teclaDecisao" id="idcorrige" value="CORRIGE">
+                    <input type="button" onclick="confirma()" class="teclaDecisao" id="idconfirma"value="CONFIRMA">
+                </form>
+
+
+
+            </div>
+
+
+        </div>
+        <div class="maquinaTitulo">
+
+            <form action="">
+
+                <p><b>Título:</b></p><input type="text" class="displayTitulo" placeholder="000000000000" maxlength="12" value="">
+                <input type="button" onclick="confirmaTitulo()" class="botaoConfirma" value="CONFIRMA">
+                <input type="reset"  class="botaoCorrige" value="CORRIGE">
+
+
+
+            </form>
+
+        
+
+
+
+        </div>
+
+
+    </main>
+
+
+
+
+<script>
+alert("Instruções:" + "\n" + "* Insira os 10 digitos do seu titulo para iniciar a votação (a urna só será liberada após inserir seu título e confirmar)." + "\n" +
+"* Os candidatos possuem um número de dois digitos, ao apertar o primeiro digito na urna, serão inseridos dois digitos ao mesmo tempo na tela da urna, logo em seguida digite o segundo digito e o segundo digito será inserido na tela da urna. Você pode apertar o botão 'corrige' para limpar os digitos e digita-los novamente." + "\n" +
+"* Você pode votar em branco, basta apertar o botão 'branco'." + "\n" +
+"* Você poder votar quantas vezes quiser, basta inserir títulos diferentes." + "\n" +
+"* Após terminar as votações, aperte o botão terminar sessão e o resultado dos votos serão mostrados na tela.");
+       
+
+        var digito1 = document.querySelector(".displayDigito1");
+        var digito2 = document.querySelector(".displayDigito2");
+        digito1.value = '';
+        digito2.value = '';
+        var numero = document.querySelector(".teclas");
+        var numeroTecla = numero.value;
+        var jose = 0;
+        var maria = 0;
+        var branco= 0;
+        var titulo= 0;
+
+var confirmaMaquina = document.querySelector(".displayTitulo");
+
+
+
+</script>
+
+</body>
+
+</html>
